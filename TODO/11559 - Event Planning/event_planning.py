@@ -1,11 +1,11 @@
-import fileinput
+import sys
 
-initial_line = True
-for line in fileinput.input():
-    line = line.rstrip()
-    arr = line.split(' ')
-    participants, budget, hotels, weeks = arr[0], arr[1], arr[2], arr[3]
-    if not initial_line:
-        
-    initial_line = False
-    # print(arr)
+lines = [line.strip() for line in sys.stdin.readlines()]
+line = 0
+
+print(lines)
+
+# while line < len(lines):
+#     participants, budget, hotels, weeks = [int(x) for x in lines[line]]
+#     # pass
+#     print(participants, budget, hotels, weeks)
