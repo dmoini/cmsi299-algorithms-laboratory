@@ -12,13 +12,17 @@ while True:
         if c == '[':
             if tail:
                 result.append(''.join(currStr))
-                currStr = []
                 tail = False
+            else:
+                result.appendleft(''.join(currStr))
+            currStr = []
         elif c == ']':
             if not tail:
                 result.appendleft(''.join(currStr))
-                currStr = []
                 tail = True
+            else:
+                result.append(''.join(currStr))
+            currStr = []
         else:
             currStr.append(c)
     result.append(''.join(currStr)) if tail else result.appendleft(''.join(currStr))
