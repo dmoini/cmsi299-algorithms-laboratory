@@ -1,0 +1,1 @@
+mv "$1.py" .. && mv "in/$1.in" "../in" && mv "out/$1.out" "../out"
