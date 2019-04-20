@@ -1,0 +1,1 @@
+python3 "$1.py" < "in/$1.in" | diff - "out/$1.out"
