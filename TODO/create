@@ -1,0 +1,1 @@
+touch $1.py && touch in/$1.in && touch out/$1.out

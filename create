@@ -1,0 +1,1 @@
+touch TODO/$1.py && touch TODO/in/$1.in && touch TODO/out/$1.out
