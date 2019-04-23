@@ -1,0 +1,1 @@
+rm $1.py && rm in/$1.in && rm out/$1.out
